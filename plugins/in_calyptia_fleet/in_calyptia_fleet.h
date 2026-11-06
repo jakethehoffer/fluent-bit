@@ -30,6 +30,7 @@
 #define FLEET_INITIAL_RETRY_INTERVAL_NANOSECONDS 0
 
 struct flb_in_calyptia_fleet_config {
+    int follow_symlinks;
     /* Time interval check */
     int interval_sec;
     int interval_nsec;
